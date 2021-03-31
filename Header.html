@@ -11,6 +11,114 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
+  <style>
+  *{
+ margin: 0;
+ padding: 0;
+}
+body{
+ font-family: 'Raleway', sans-serif;
+ font-size: 14px;
+ font-weight: 400;
+ color: #777;
+}
+h5{
+ font-size : 24px;
+ color: #777;
+}
+#team .card{
+ position: relative;
+ margin: 10px;
+ border-radius: 0;
+ border:none;
+ box-shadow: 5px 5px 15px #000000;
+ transition: all 0.3s ease-in;
+ -webkit-transition: all 0.3s ease-in;
+ -moz-transition: all 0.3s ease-in;
+}
+#team .card:hover{
+ color: #fff;
+ border-radius: 5px;
+ border:none;
+ box-shadow: 5px 5px 10px #000000;
+ cursor: pointer;
+}
+#team .card a{
+ color: #FFFFFF;
+ font-size: calc(30% + 1vw + 1vh);
+ position: absolute;
+ top: 70%;
+}
+.inner{
+ overflow: hidden;
+ flex-grow: 1;
+ object-fit: contain;
+}
+#team .card img{
+ transition: all 1.5s ease;
+ width: 100%;
+ height: 30vw;
+ object-fit: cover;
+ filter: brightness(40%);
+}
+#team .card:hover img{
+ transform: scale(1.1);
+ filter: brightness(30%);
+}
+#team .card:hover .b1{
+ color: #000000;
+ background-color: #FFFFFF;
+ font-weight: bold;
+}
+#team .card:hover a{
+ opacity:0;
+}
+.b1{
+ font-size: 1rem;
+ color: #FFFFFF;
+ border: #FFFFFF 3px solid;
+ background-color: inherit;
+ padding: inherit;
+}
+.center {
+ position: absolute;
+ top: 30%;
+ width: 100%;
+ text-align: center;
+}
+.b2{
+ font-size: 1rem;
+ color: #FFFFFF;
+ border: #FFFFFF 3px solid;
+ background-color: inherit;
+ padding: inherit;
+ opacity:0;
+}
+#team .card:hover .b2{
+ opacity:1;
+}
+#carouselExampleControls{
+ height: 400px;
+ width: 80%;
+ justify-content: center;
+}
+#carouselExampleControls .carousel-inner img{
+ opacity: 0.4;
+ height: 400px;
+ width: 80%;
+}
+.c2{
+ color: #000000;
+ position:absolute;
+ top: 40%;
+}
+.c2 h1{
+ font-weight: 1000;
+}
+.c2 h2{
+ font-weight: bold;
+}
+</style>
   <body>
 
     <div class="header">
@@ -59,6 +167,149 @@
       </nav>
 
     </div>
+    
+    <section id="team">
+    <div class="container my-3 py-5">
+      <div class="row mb-5">
+        <div class="col text-center">
+          <h1>Feature Stories </h1>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-9">
+          <div class="card bg-dark text-white">
+            <div class="inner">
+              <img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Malus_domestica_a1.jpg/330px-Malus_domestica_a1.jpg">
+            </div>
+            <div class="card-img-overlay center">
+              <button class="b2">READ MORE</button>
+            </div>
+            <div class="card-img-overlay">
+              <h5 class="card-title"><a>How are we changing with respect to NEP?</a></h5>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-9">
+          <div class="card bg-dark text-white">
+            <div class="inner">
+              <img class="card-img" src="https://www.edumilestones.com/blog/images/career-counselling-techniques.png">
+            </div>
+            <div class="card-img-overlay center">
+              <button class="b2">READ MORE</button>
+            </div>
+            <div class="card-img-overlay">
+              <h5 class="card-title"><a>Look at the reports of our latest initiative.</a></h5>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-9">
+          <div class="card bg-dark text-white">
+            <div class="inner">
+              <img class="card-img" src="https://www.worldvision.org/wp-content/uploads/2018/08/D324-0485-264-850x567.jpg">
+            </div>
+            <div class="card-img-overlay center">
+              <button class="b1">VIEW ALL STORIES</button>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+    <center>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="https://chronicle.brightspotcdn.com/dims4/default/405b78d/2147483647/strip/true/crop/1152x648+0+0/resize/840x473!/quality/90/?url=http%3A%2F%2Fchronicle-brightspot.s3.amazonaws.com%2F78%2F79%2F1eb1ce05400391e5690e4718496b%2Fmain-gif-lr.gif" alt="First slide">
+              <div class="carousel-caption c2">
+                <h1>25+</h1>
+                <h2>Teacher Training Sessions</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://d1nakyqvxb9v71.cloudfront.net/wp-content/uploads/2020/01/Heart-Article-Hero-1200x500.gif" alt="Second slide">
+              <div class="carousel-caption c2">
+                <h1>1000+</h1>
+                <h2>Potential Blood Donor Database</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://media1.giphy.com/media/3oeQdrm5bD0PWdd4Un/giphy.gif" alt="Third slide">
+              <div class="carousel-caption c2">
+                <h1>110+</h1>
+                <h2>Women attended tailoring workshop</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://64.media.tumblr.com/82d0af48dd5327c4eca65b59a667a4f4/tumblr_or1g146ju71uji2p9o1_1280.gifv" alt="Second slide">
+              <div class="carousel-caption c2">
+                <h1>25+</h1>
+                <h2>Bicycles Donated</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://classroomclipart.com/images/gallery/Animations/Computers/man-using-computer-keyboard-2-animated.gif" alt="Second slide">
+              <div class="carousel-caption c2">
+                <h1>100+</h1>
+                <h2>People Attended Computer Workshop</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://www.animaker.com/blog/wp-content/uploads/2017/07/ezgif-1-fd52f7151c.gif" alt="Second slide">
+              <div class="carousel-caption c2">
+                <h1>10+</h1>
+                <h2>States Covered</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://www.akshayapatra.org/images/Kids-playing_4s.gif" alt="Second slide">
+              <div class="carousel-caption c2">
+                <h1>410+</h1>
+                <h2>Students Gained Free Education</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://res.cloudinary.com/jerrick/image/upload/v1528133694/u7jd1ksapcrba580s8la.gif" alt="Second slide">
+              <div class="carousel-caption c2">
+                <h1>2000+</h1>
+                <h2>Families Provided With Basic Amenities during Covid-19</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://media4.s-nbcnews.com/i/newscms/2021_11/1688460/metabolism-kb-main-210316_ec49560695338606eb58cb8f2a6b76e8.gif" alt="Second slide">
+              <div class="carousel-caption c2">
+                <h1>450+</h1>
+                <h2>Families Provided With Food Kits during Covid-19</h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="https://cdn.videoplasty.com/gif/indian-casual-woman-putting-on-face-mask-stock-gif-16028-384x216.gif?1603870643" alt="Second slide">
+              <div class="carousel-caption c2">
+                <h1>5000+</h1>
+                <h2>Masks Distributed during Covid-19</h2>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </center>
+    <div>
+      this is footer.
+    </div>
+  </section>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
