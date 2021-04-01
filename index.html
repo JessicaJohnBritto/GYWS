@@ -15,6 +15,70 @@
     <!--header-section-->
     .large { font-size: 20px;}
     
+    <!---About Us and Team Section-->
+
+    .column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+.info {
+  padding: 50px;
+  text-align: center;
+  background-color: skyblue;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+    
     <!--impact-section-->
   *{
  margin: 0;
@@ -208,6 +272,65 @@ footer a, footer p {
 
       </nav>
 
+    </div>
+    
+    <!---About Us And Team Section-->
+
+    <div class="about-section">
+      <h1>About Us</h1> <img src="https://www.bloopanimation.com/wp-content/uploads/2016/11/educationIcon.png" height="100">
+      <p><i>A brief intro to our organisation</i></p>
+    
+    </div>
+    <div class="info">
+      <p><b>Gopali Youth Welfare Society</b> is a registered voluntary non-governmental organisation run by IIT Kharagpur students along with some faculty members with the support of local members from Gopali.This NGO at IIT Kharagpur was established in 2002 with a mission to improve the living standard of the people of Gopali, a village near IIT Kharagpur campus (around 5km from it). It was registered in 2004 under the West Bengal Societies registration act of 1961 with Reg. No S/IL/23893. This is an act of social service by IIT Kharagpur students with a motivation of returning something back to the society.</p>
+      <a href="https://www.gyws.org/about"><img src="https://www.kitchenstewardship.com/wp-content/uploads/2017/06/learn-more-button-1024x480.png" width="100" height="55"></a>
+    </div>
+    <p></P>
+    <p></P>
+    <p></P>
+    <p></P>
+    
+    
+    <h2 style="text-align:center">Our Team</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="sri lanka.jpg" alt="Jane" style="width:100%">
+          <div class="container">
+            <h2>NAME</h2>
+            <p class="title">Title</p>
+            <p>Some text that describes </p>
+            <p>name@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="sri lanka.jpg" alt="Mike" style="width:100%">
+          <div class="container">
+            <h2>Name</h2>
+            <p class="title">Title</p>
+            <p>Some text that describes </p>
+            <p>name@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="sri lanka.jpg" alt="John" style="width:100%">
+          <div class="container">
+            <h2>Name</h2>
+            <p class="title">Title</p>
+            <p>Some text that describes </p>
+            <p>name@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
     </div>
     
     <!--imapct section-->
