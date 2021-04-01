@@ -1,0 +1,57 @@
+.heading
+{
+  text-align: center;
+  color: black;
+}
+.heading1
+{
+  text-align: center;
+  color: grey;
+  padding-bottom: 50px;
+}
+
+.card-title
+{
+  color: #333;
+}
+
+.card
+{
+  background-color: skyblue;
+  border-width: 1px;
+  border-color: white;
+  margin: 10px;
+}
+.container
+{
+  padding-top: 10px;
+}
+.card-text
+{
+  text-align: center;
+  color: #ffffff;
+}
+.initiatives
+{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left:  50px;
+  padding-right: 50px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: inherit;
+  min-width: inherit;
+  background-color: skyblue;
+}
+body{
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.btn
+{
+  background-color: var(--green);
+}
